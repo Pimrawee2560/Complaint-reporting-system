@@ -1,0 +1,143 @@
+/* รีเซ็ตสไตล์เริ่มต้นของเบราว์เซอร์ */
+body, h1, h4, form, label, input, a {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* สไตล์คอนเทนเนอร์ */
+body {
+    background-color: #F77676;
+    padding: 20px;
+}
+
+form {
+    background-color: #F77676;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* สไตล์หัวข้อ h1 */
+h1 {
+    display: flex; /* ใช้ Flexbox */
+    justify-content: center; /* จัดให้ตรงกลางแนวนอน */
+    align-items: center; /* จัดให้ตรงกลางแนวตั้ง */
+    font-size: 28px; /* ขนาดฟอนต์ */
+    margin-bottom: 10px; /* ระยะห่างด้านล่าง */
+    color: #333; /* สีข้อความ */
+    background-color: #fff; /* สีพื้นหลัง */
+    padding: 10px; /* การเพิ่มเติมในกรอบข้อความ */
+    border-radius: 8px; /* กำหนดรูปร่างของกรอบ */
+    border: 2px solid #fff; /* เส้นขอบสีขาว */
+    max-width: 50%; /* กำหนดความกว้างสูงสุดของกล่อง */
+    margin-left: auto; /* ย้ายไปทางขวา */
+    margin-right: auto; /* ย้ายไปทางซ้าย */
+}
+
+
+
+/* สไตล์หัวข้อ h4 */
+h4 {
+    display: flex; /* ใช้ Flexbox */
+    justify-content: center; /* จัดให้ตรงกลางแนวนอน */
+    align-items: center; /* จัดให้ตรงกลางแนวตั้ง */
+    font-size: 16px; /* ขนาดฟอนต์ */
+    margin-bottom: 20px; /* ระยะห่างด้านล่าง */
+    color: #000000; /* สีข้อความ */
+
+}
+
+
+
+/* สไตล์ปุ่มรายการวิทยุ */
+input[type="radio"] {
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+}
+
+/* สไตล์ลิงก์ */
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    background-color: #fff; /* เพิ่มสีพื้นหลังให้กับลิงก์ */
+    border: 2px solid #fff; /* เพิ่มเส้นขอบสีขาว */
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+/* สไตล์ปุ่มรีเซ็ต */
+input[type="reset"] {
+    display: block; /* ทำให้ปุ่มเป็น block element */
+    margin: auto; /* ให้ปุ่มอยู่ตรงกลางทั้งแนวนอนและแนวตั้ง */
+    margin-top: 10px; /* ระยะห่างด้านบน */
+    padding: 10px 20px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #fff; /* เพิ่มสีพื้นหลังให้กับปุ่มรีเซ็ต */
+    border: 2px solid #fff; /* เพิ่มเส้นขอบสีขาว */
+}
+
+input[type="reset"]:hover {
+    background-color: #999;
+}
+
+
+/* สไตล์ปุ่มส่ง */
+input[type="submit"] {
+    display: block; /* ทำให้ปุ่มเป็น block element */
+    margin: 0 auto; /* ให้ปุ่มอยู่ตรงกลางแนวนอน */
+    margin-bottom: 10px; /* ระยะห่างด้านล่าง */
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+
+input[type="submit"]:hover {
+    background-color: #218838;
+    color: #fff; /* เพิ่มสีตัวอักษรขณะเม้าส์ hover */
+}
+
+/* สไตล์กล่องข้อความ */
+div {
+    box-sizing: border-box; /* เพิ่มคุณสมบัตินี้ */
+    border: 2px solid #fff; /* ปรับสีเส้นขอบเป็นสีขาว */
+    padding: 10px; /* กำหนดการเพิ่มพื้นที่ภายในกล่องเป็น 10px */
+    background-color: #fff; /* เพิ่มสีพื้นหลังให้กับกล่องข้อความ */
+    border-radius: 8px; /* กำหนดรูปร่างของกรอบ */
+    margin: auto; /* ให้กล่องข้อความอยู่ตรงกลาง */
+    margin-bottom: 20px; /* กำหนดระยะห่างด้านล่างของกล่อง */
+    max-width: 600px; /* กำหนดความกว้างสูงสุด */
+}
+
+
+/* สไตล์ป้ายชื่อ */
+label {
+    font-weight: bold;
+    color: #333; /* เพิ่มสีข้อความป้ายชื่อ */
+}
+
+/* สไตล์สัญลักษณ์ของฟิลด์ที่ต้องระบุ */
+.required {
+    color: red;
+}
